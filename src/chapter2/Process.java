@@ -12,6 +12,14 @@ public class Process {
                 .collect(Collectors.joining(","));
     }
 
+    public String cleanNamesㅖ(List<String> names) {
+        if (names == null) return "";
+        return names.parallelStream()
+                .filter(name -> name.length() > 1)
+                .map(name -> capitalize(name))
+                .collect(Collectors.joining(","));
+    }
+
     private String capitalize(String e) {
         return e.substring(0, 1).toUpperCase() + e.substring(1, e.length());
     }
