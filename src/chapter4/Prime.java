@@ -25,7 +25,7 @@ public class Prime {
 
     public static int sumFactors(final int number) {
         int sum = 0;
-        for (int i : getFactors(number)) sum += i;
+        for (Object i : getFactors(number)) sum += (int)i;
         return sum;
     }
 
