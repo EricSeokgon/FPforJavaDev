@@ -23,7 +23,7 @@ public class Prime {
         return factors;
     }
 
-/*    public static int sumFactors(final int number) {
+    public static int sumFactors(final int number) {
         int sum = 0;
         for (int i : getFactors(number)) sum += i;
         return sum;
@@ -37,6 +37,6 @@ public class Prime {
         int candidate = lastPrime + 1;
         while (!isPrime(candidate)) candidate++;
         return candidate;
-    }*/
+    }
 
 }
